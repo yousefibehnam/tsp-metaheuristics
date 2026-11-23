@@ -1,0 +1,6 @@
+# Exact versions used for the published results (Python 3.14.2).
+numpy==2.5.5
+matplotlib==3.11.2
+pytest==9.2.0
+ruff==0.17.6
+shellcheck-py==0.11.0.1
