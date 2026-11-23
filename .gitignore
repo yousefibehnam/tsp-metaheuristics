@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Downloaded instances, logs and scratch output (never committed)
+/data/
+
+# macOS
+.DS_Store
