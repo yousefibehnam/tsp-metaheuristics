@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.14"]
+    name: Python ${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e . --no-deps
+      - name: Lint
+        run: |
+          ruff check src tests
+          ruff format --check src tests
+          shellcheck scripts/*.sh
+      - name: Download the TSPLIB instances
+        run: scripts/download_data.sh
+      - name: Test (includes the published optimal tour lengths)
+        run: pytest
+      - name: Solve berlin52 with every algorithm
+        run: |
+          for a in nn 2opt ga sa; do tspmh solve berlin52 -a "$a" --evaluations 100000; done
