@@ -1,0 +1,240 @@
+{
+  "evaluations": 1000000,
+  "seeds": [
+    100,
+    101,
+    102
+  ],
+  "instances": [
+    "st70",
+    "kroA100"
+  ],
+  "rows": [
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 50,
+        "mutation_rate": 0.1
+      },
+      "gaps": {
+        "st70": 9.827160493827167,
+        "kroA100": 10.075807411584117
+      },
+      "mean_gap": 9.951483952705642
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 50,
+        "mutation_rate": 0.3
+      },
+      "gaps": {
+        "st70": 2.864197530864203,
+        "kroA100": 5.024590420699803
+      },
+      "mean_gap": 3.944393975782003
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 50,
+        "mutation_rate": 0.6
+      },
+      "gaps": {
+        "st70": 1.9259259259259258,
+        "kroA100": 4.634589480938502
+      },
+      "mean_gap": 3.280257703432214
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 100,
+        "mutation_rate": 0.1
+      },
+      "gaps": {
+        "st70": 7.111111111111111,
+        "kroA100": 9.59339661059425
+      },
+      "mean_gap": 8.35225386085268
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 100,
+        "mutation_rate": 0.3
+      },
+      "gaps": {
+        "st70": 4.444444444444445,
+        "kroA100": 5.815556182063095
+      },
+      "mean_gap": 5.13000031325377
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 100,
+        "mutation_rate": 0.6
+      },
+      "gaps": {
+        "st70": 5.728395061728389,
+        "kroA100": 8.910503398803364
+      },
+      "mean_gap": 7.319449230265876
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 200,
+        "mutation_rate": 0.1
+      },
+      "gaps": {
+        "st70": 6.074074074074074,
+        "kroA100": 7.037245872881628
+      },
+      "mean_gap": 6.555659973477852
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 200,
+        "mutation_rate": 0.3
+      },
+      "gaps": {
+        "st70": 3.209876543209871,
+        "kroA100": 5.839050214578836
+      },
+      "mean_gap": 4.524463378894353
+    },
+    {
+      "algorithm": "GA",
+      "params": {
+        "population": 200,
+        "mutation_rate": 0.6
+      },
+      "gaps": {
+        "st70": 11.456790123456797,
+        "kroA100": 31.64489552986875
+      },
+      "mean_gap": 21.550842826662773
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.3,
+        "final_ratio": 0.01
+      },
+      "gaps": {
+        "st70": 0.6419753086419809,
+        "kroA100": 1.7087992983115678
+      },
+      "mean_gap": 1.1753873034767743
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.3,
+        "final_ratio": 0.001
+      },
+      "gaps": {
+        "st70": 1.1358024691357969,
+        "kroA100": 1.6774739216239076
+      },
+      "mean_gap": 1.4066381953798524
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.3,
+        "final_ratio": 0.0001
+      },
+      "gaps": {
+        "st70": 1.9259259259259258,
+        "kroA100": 1.7228957178210125
+      },
+      "mean_gap": 1.8244108218734691
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.5,
+        "final_ratio": 0.01
+      },
+      "gaps": {
+        "st70": 0.4444444444444444,
+        "kroA100": 0.9272311499545725
+      },
+      "mean_gap": 0.6858377971995084
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.5,
+        "final_ratio": 0.001
+      },
+      "gaps": {
+        "st70": 1.283950617283945,
+        "kroA100": 1.5333771888606904
+      },
+      "mean_gap": 1.4086639030723176
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.5,
+        "final_ratio": 0.0001
+      },
+      "gaps": {
+        "st70": 1.5308641975308699,
+        "kroA100": 1.4409673276321204
+      },
+      "mean_gap": 1.4859157625814952
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.8,
+        "final_ratio": 0.01
+      },
+      "gaps": {
+        "st70": 1.1851851851851851,
+        "kroA100": 3.1059110985809606
+      },
+      "mean_gap": 2.145548141883073
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.8,
+        "final_ratio": 0.001
+      },
+      "gaps": {
+        "st70": 1.4320987654320931,
+        "kroA100": 0.9977132475017955
+      },
+      "mean_gap": 1.2149060064669444
+    },
+    {
+      "algorithm": "SA",
+      "params": {
+        "accept": 0.8,
+        "final_ratio": 0.0001
+      },
+      "gaps": {
+        "st70": 1.5308641975308699,
+        "kroA100": 1.7495222880055075
+      },
+      "mean_gap": 1.6401932427681887
+    }
+  ],
+  "chosen": {
+    "GA": {
+      "population": 50,
+      "mutation_rate": 0.6
+    },
+    "SA": {
+      "accept": 0.5,
+      "final_ratio": 0.01
+    }
+  }
+}
