@@ -17,8 +17,8 @@ PILOT_SEEDS = (100, 101, 102)  # disjoint from the reported seeds
 PILOT_INSTANCES = ("st70", "kroA100")
 
 # Chosen by the pilot (results/pilot.md); see choose() for the rule.
-GA_PARAMS = {"population": 100, "mutation_rate": 0.3}
-SA_PARAMS = {"accept": 0.5, "final_ratio": 1e-3}
+GA_PARAMS = {"population": 50, "mutation_rate": 0.6}
+SA_PARAMS = {"accept": 0.5, "final_ratio": 1e-2}
 
 
 def gap(length: float, optimum: int) -> float:
